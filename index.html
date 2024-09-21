@@ -4,114 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chermodsc - Aldo Rafael Rizki's official website. Explore his projects, blog, and contact information.">
-    <title>Chermodsc - Aldo Rafael Rizki</title>
+    <title>Chermodsc - Pro Gamer and Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+            color: #f1f1f1;
             line-height: 1.6;
             overflow-x: hidden;
         }
+
+        /* Header styles */
         header {
-            background: linear-gradient(135deg, #4CAF50, #81C784);
-            color: white;
-            padding: 50px 0;
+            background: url('https://example.com/background.jpg') no-repeat center center/cover;
+            padding: 80px 0;
             text-align: center;
-            animation: fadeIn 1s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
         }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header h1 {
+            color: #00ff88;
+            font-size: 3.5rem;
+            margin: 0;
+            z-index: 2;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #d0d0d0;
+            z-index: 2;
+        }
+
+        /* Navigation bar styles */
         nav {
-            margin: 30px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(18, 18, 18, 0.9);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
         }
+
         nav a {
-            margin: 0 20px;
+            color: #00ff88;
             text-decoration: none;
-            color: white;
+            font-size: 1.2rem;
+            margin: 0 20px;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 30px;
             transition: background-color 0.3s, transform 0.3s;
             position: relative;
         }
-        nav a::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background: white;
-            left: 0;
-            bottom: -5px;
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
+
         nav a:hover {
-            background-color: #388E3C;
-            transform: translateY(-2px);
+            background-color: #0088ff;
+            transform: scale(1.05);
         }
-        nav a:hover::after {
-            transform: scaleX(1);
-        }
+
+        /* Section styles */
         section {
-            padding: 60px 30px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            transform: translateY(20px);
-            opacity: 0;
-            animation: slideIn 0.5s forwards;
-        }
-        section:nth-of-type(2) { animation-delay: 0.3s; }
-        section:nth-of-type(3) { animation-delay: 0.6s; }
-        section:nth-of-type(4) { animation-delay: 0.9s; }
-        footer {
-            background-color: #4CAF50;
-            color: white;
+            padding: 60px 20px;
+            margin: 30px auto;
+            background-color: #1b1b1b;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            max-width: 1000px;
             text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-        .highlight {
-            color: #4CAF50;
-            font-weight: bold;
-        }
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #00ff88;
             margin-bottom: 20px;
-            animation: fadeIn 0.5s ease;
+            position: relative;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #0088ff;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        @keyframes slideIn {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+
+        section p, ul {
+            font-size: 1.1rem;
+            color: #d0d0d0;
         }
+
+        section:hover {
+            transform: scale(1.02);
+            background-color: #282828;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #0d0d0d;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        footer a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Gaming button style */
         .telegram-link {
             display: inline-block;
-            background-color: #0088cc;
+            background-color: #0088ff;
             color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.2rem;
             text-decoration: none;
-            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
+
         .telegram-link:hover {
-            background-color: #007bb5;
+            background-color: #00ff88;
             transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                margin: 0 10px;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to Chermodsc's World</h1>
-    <p>Aldo Rafael Rizki - Young Developer and Creator of Vextrox/GameXcel</p>
+    <h1>©'@Chermodsc</h1>
+    <p>Aldo Rafael Rizki - Pro Gamer & Developer</p>
 </header>
 
 <nav>
@@ -123,52 +202,35 @@
 
 <section id="about">
     <h2>About Chermodsc</h2>
-    <p>Chermodsc, also known as <span class="highlight">Aldo Rafael Rizki</span>, is a 14-year-old tech enthusiast and young developer. Known for his innovative projects, Aldo has created Vextrox, a popular non-root module for enhancing gaming experiences. Despite his young age, he has gained recognition in the tech community for his dedication to programming and development.</p>
+    <p>Chermodsc, also known as <span style="color: #00ff88; font-weight: bold;">Aldo Rafael Rizki</span>, is a 14-year-old gaming prodigy and developer. Known for creating the non-root gaming module <strong>Vextrox</strong>, Aldo has made a name in the tech world for enhancing gaming performance and user experience.</p>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
     <ul>
         <li><strong>Vextrox:</strong> A non-root module for improving gaming performance.</li>
-        <li><strong>Other Apps:</strong> [Include more apps or projects if available]</li>
+        <li><strong>GameXcel:</strong> A performance booster for mobile gaming.</li>
     </ul>
 </section>
 
 <section id="blog">
     <h2>Blog</h2>
-    <p>Stay tuned for the latest updates from Chermodsc on his projects, development tips, and more.</p>
+    <p>Stay updated with the latest gaming tips, tricks, and project updates from Chermodsc.</p>
 </section>
 
 <section id="contact">
     <h2>Contact Chermodsc</h2>
-    <p>If you want to reach out to Aldo Rafael Rizki, you can contact him via:</p>
+    <p>If you wish to connect with Aldo Rafael Rizki, here are some ways to reach him:</p>
     <ul>
-        <li>Email: <a href="mailto:jumroni192@gmail.com">Chermodsc@gmail.com</a></li>
+        <li>Email: <a href="mailto:Chermodsc@gmail.com">Chermodsc@gmail.com</a></li>
         <li>GitHub: <a href="https://github.com/ChermodAldo" target="_blank">Chermodsc on GitHub</a></li>
-        <li>Telegram: <a class="telegram-link" href="https://t.me/ChermodzsModule" target="_blank">Chat on Telegram</a></li>
+        <li>Telegram: <a href="https://t.me/ChermodzsModule" class="telegram-link" target="_blank">Chat on Telegram</a></li>
     </ul>
 </section>
 
 <footer>
-    <p>&copy; 2024 Chermodsc. All Rights Reserved.</p>
+    <p>&copy; 2024 Chermodsc. All Rights Reserved. | <a href="https://github.com/ChermodAldo" target="_blank">GitHub</a></p>
 </footer>
-
-<script>
-    // Animate sections as they come into view
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animation = 'slideIn 0.5s forwards';
-                observer.unobserve(entry.target);
-            }
-        });
-    });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-</script>
 
 </body>
 </html>
