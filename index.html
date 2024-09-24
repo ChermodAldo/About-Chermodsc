@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Proyek Kelas 8L - Pengelolaan Sampah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+        h2:hover {
+            color: #388E3C;
+        }
+        p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        .intro {
+            background-image: url('https://images.pexels.com/photos/1704120/pexels-photo-1704120.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            animation: zoomIn 1s ease;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 48%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .card {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeInUp 0.5s forwards;
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        ul li {
+            opacity: 0;
+            animation: fadeInList 0.5s ease forwards;
+            animation-delay: calc(0.3s * var(--i));
+        }
+        @keyframes fadeInList {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proyek P5 Kelas 8L</h1>
+        <p>SMPN 59 KOTA BEKASI</p>
+        <p>Tema: Pengelolaan Sampah dan Lingkungan</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h2>Pengantar</h2>
+            <p>Pengelolaan sampah adalah salah satu isu penting yang harus kita perhatikan. Dengan cara yang tepat, kita dapat mengurangi dampak negatif sampah terhadap lingkungan.</p>
+        </div>
+
+        <h2>Kegiatan Kami</h2>
+        <p>Berbagai kegiatan dilakukan untuk meningkatkan kesadaran tentang pentingnya pengelolaan sampah, termasuk:</p>
+        <ul>
+            <li style="--i: 1;">Penyuluhan tentang daur ulang.</li>
+            <li style="--i: 2;">Pengumpulan sampah di lingkungan sekolah.</li>
+            <li style="--i: 3;">Kompetisi membuat kerajinan dari bahan bekas.</li>
+        </ul>
+
+        <h2>Gambar Kegiatan</h2>
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/3777432/pexels-photo-3777432.jpeg" alt="Kegiatan 1">
+            <img src="https://images.pexels.com/photos/3985295/pexels-photo-3985295.jpeg" alt="Kegiatan 2">
+        </div>
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/3777431/pexels-photo-3777431.jpeg" alt="Kegiatan 3">
+            <img src="https://i.imgur.com/2ZQyKuU.jpeg" alt="Kegiatan 4">
+        </div>
+
+        <h2>Deskripsi Kegiatan</h2>
+        <div class="card">
+            <h3>Kegiatan 1: Penyuluhan Daur Ulang</h3>
+            <p>Kegiatan ini melibatkan siswa dalam memahami pentingnya daur ulang dan cara-cara yang dapat dilakukan di rumah.</p>
+        </div>
+        <div class="card">
+            <h3>Kegiatan 2: Pengumpulan Sampah</h3>
+            <p>Pengumpulan sampah dilakukan di sekitar sekolah untuk menjaga kebersihan dan menciptakan lingkungan yang lebih sehat.</p>
+        </div>
+        <div class="card">
+            <h3>Kegiatan 3: Kompetisi Kerajinan</h3>
+            <p>Siswa berpartisipasi dalam membuat kerajinan tangan dari bahan bekas, yang kemudian dipamerkan di sekolah.</p>
+        </div>
+        <div class="card">
+            <h3>Kegiatan 4: Workshop</h3>
+            <p>Workshop tentang pengelolaan sampah dan daur ulang diadakan untuk meningkatkan pengetahuan siswa.</p>
+        </div>
+
+        <h2>Kesimpulan</h2>
+        <p>Kita semua memiliki tanggung jawab untuk menjaga lingkungan. Mari kita mulai dari hal kecil, seperti mengelola sampah dengan baik!</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Proyek P5 Kelas 8L - Pengelolaan Sampah</p>
+        <div>
+            <a href="https://www.instagram.com/eilveclas._?igsh=bmk0MzJ4dnp0cHFm" target="_blank">Instagram 8L</a>
+        <p>Copyright Aldo Rafael Rizki 2024</p>
+        </div>
+    </footer>
+</body>
+  </html>
